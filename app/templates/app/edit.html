@@ -1,0 +1,8 @@
+<form action="/save/{{address.id}}"
+      method="post">
+    <input type="text" name="address"
+           value="{{address.address}}">
+    <br>
+    <input type="submit">
+    {% csrf_token %}
+</form>
